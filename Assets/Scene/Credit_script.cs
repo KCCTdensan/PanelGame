@@ -15,7 +15,7 @@ public class Credit_script : MonoBehaviour
     void Update()
     {
         transform.localPosition = m_pos;  // 形状位置を更新
-        m_pos.y -= 0.10f;
+        m_pos.y -= 0.05f;
     }
 }
 
