@@ -1046,7 +1046,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 706033659}
-  m_Text: Ujimoto senpai
+  m_Text: Mr.Ujimoto
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1734,7 +1734,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1282080321}
-  m_Text: Usada senpai
+  m_Text: Mr.Usada
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
