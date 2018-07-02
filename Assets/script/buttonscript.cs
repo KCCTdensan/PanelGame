@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class buttonscript : MonoBehaviour {
 
 	public void OnClick() {
-		SceneManager.LoadScene ("StageSelect");
+		SceneManager.LoadScene("StageSelect");
 	}
 }

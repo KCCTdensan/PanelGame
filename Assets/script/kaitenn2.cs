@@ -11,6 +11,11 @@ public class kaitenn2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			transform.rotation = Quaternion.AngleAxis(180, new Vector3(0, 1, 0));
+			
 	}
+
+	public void Rotation(){
+		transform.Rotate(new Vector3(0f,180f,0f));
+	}
+
 }
