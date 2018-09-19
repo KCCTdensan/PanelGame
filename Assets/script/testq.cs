@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class testq : MonoBehaviour
+public class testq: MonoBehaviour
 {
 	public string cubeTag="Panel";
 
