@@ -15,8 +15,10 @@ public class panel_creat : MonoBehaviour {
             for (b = 1; b < 4; b++)
             {
                 var aaa = Instantiate(panel);
+
                 aaa.transform.position = new Vector3(a * 10 - 40, b*10-40, 81);
                 panels[a - 1, b - 1] = aaa;
+
             }
         }
 	}

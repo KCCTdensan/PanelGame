@@ -225,6 +225,8 @@ MonoBehaviour:
   turning: 0
   startzero: 0
   startmax: 0
+  x: 0
+  y: 0
 --- !u!114 &114963781050867298
 MonoBehaviour:
   m_ObjectHideFlags: 1

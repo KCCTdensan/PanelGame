@@ -5,19 +5,22 @@ using UnityEngine;
 public class panel_kaiten : MonoBehaviour {
    
     [SerializeField]
-    private bool turning = false;
+	public bool turning = false;
     [SerializeField]
     private bool startzero = false;
     [SerializeField]
     private bool startmax = false;
     private float nowtime = 0;
+	public int x, y;
+	private panelmaster pm;
     public void turn()
     {
-        turning = true;
+		pm.turnpanels (y, x);
     }
 	// Use this for initialization
 	void Start () {
         
+		pm = GameObject.FindGameObjectWithTag ("master").GetComponent<panelmaster> ();
 
     }
 
