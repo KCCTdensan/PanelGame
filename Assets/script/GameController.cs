@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour {
 
 
 	void Start(){
-		_audioSource = GameObject.Find ("GameMusic").GetComponent<AudioSource> ();
+		_audioSource = GameObject.Find ("BGM").GetComponent<AudioSource> ();
 		_timing = new float[1024];
 		_lineNum = new int[1024];
 		LoadCSV ();
