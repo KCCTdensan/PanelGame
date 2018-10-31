@@ -52,7 +52,7 @@ public class panel_kaiten : MonoBehaviour {
                 startmax = true;
                 float angle = Mathf.LerpAngle(minAngle2, maxAngle2, nowtime);
                 transform.eulerAngles = new Vector3(0, angle, 0);
-                Debug.Log(transform.eulerAngles.y);
+                
                 if (transform.eulerAngles.y <= 5)
                 {
                     transform.eulerAngles = new Vector3(0, 0, 0);
