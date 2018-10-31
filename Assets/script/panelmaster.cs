@@ -7,22 +7,25 @@ public class panelmaster : MonoBehaviour {
 		public GameObject panel;
 	    private bool nowturn;
 		private GameObject[,] panels = new GameObject[3, 3];
+		private int[,] States = new int[3, 3];
 		private panel_kaiten[,] pk = new panel_kaiten[3, 3];
 
 		int a,b;
 		// Use this for initialization
 		void Start () {
-			for (a = 1; a < 4; a++)
+			for (a = 0; a < 3; a++)
 			{
-				for (b = 1; b < 4; b++)
+				for (b = 0; b < 3; b++)
 				{
 					var aaa = Instantiate(panel);
 				    
 					aaa.transform.position = new Vector3(a * 10 - 40, b*10-40, 81);
-					panels[a - 1, b - 1] = aaa;
-				pk [a - 1, b - 1]= aaa.GetComponent<panel_kaiten>();
-				pk [a-1,b-1].x = a - 1;
-				pk [a-1,b-1].y = b - 1;
+					panels[a , b ] = aaa;
+				pk [a , b ]= aaa.GetComponent<panel_kaiten>();
+				pk [a,b].x = a ;
+				pk [a,b].y = b ;
+				States [a  , b ] = 0;
+				Debug.Log(States[0,0]);
 				}
 			}
 		}
