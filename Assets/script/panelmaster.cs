@@ -10,11 +10,13 @@ public class panelmaster : MonoBehaviour
 	private GameObject[,] panels = new GameObject[3, 3];
 	private bool[,] States = new bool[3, 3];
 	private panel_kaiten[,] pk = new panel_kaiten[3, 3];
+	Answer ans;
 
 	int a, b;
 	// Use this for initialization
 	void Start ()
 	{
+		ans = gameObject.AddComponent<Answer>();
 		for (a = 0; a < 3; a++) {
 			for (b = 0; b < 3; b++) {
 				var aaa = Instantiate (panel);
@@ -25,7 +27,7 @@ public class panelmaster : MonoBehaviour
 				pk [a, b].x = a;
 				pk [a, b].y = b;
 				States [a, b] = false;
-				Debug.Log (States [0, 0]);
+				//Debug.Log (States [0, 0]);
 			}
 		}
 	}
@@ -81,9 +83,5 @@ public class panelmaster : MonoBehaviour
 		if (x == 3 && y == 3) {
 			nowturn = false;
 		}
-
-	}
-	public bool[,] GetPanelStates (){
-		return States;
 	}
 }
