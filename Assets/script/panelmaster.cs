@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class panelmaster : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class panelmaster : MonoBehaviour
 			for (b = 0; b < 3; b++) {
 				var aaa = Instantiate (panel);
 				    
-				aaa.transform.position = new Vector3 (a * 10 - 40, b * 10 - 40, 81);
+				aaa.transform.position = new Vector3 (a * 10 - 55, b * 10 - 30, 82);
 				panels [a, b] = aaa;
 				pk [a, b] = aaa.GetComponent<panel_kaiten> ();
 				pk [a, b].x = a;
@@ -30,6 +31,7 @@ public class panelmaster : MonoBehaviour
 				//Debug.Log (States [0, 0]);
 			}
 		}
+
 	}
 
 	public void turnpanels (int x, int y)
@@ -56,10 +58,9 @@ public class panelmaster : MonoBehaviour
 			States [y, x + 1] = !States [y, x + 1];
 		if (x - 1 >= 0)
 			States [y, x - 1] = !States [y, x - 1];
-		for (x = 0; x < 3; x++) {
-			for (y = 0; y < 3; y++) {
-				Debug.Log (States [y, x]);
-			}
+		Debug.Log (ans.check (States));
+		if (ans.check (States)) {
+			SceneManager.LoadScene ("StageSelect");
 		}
 	}
 
