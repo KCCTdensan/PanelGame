@@ -15,6 +15,6 @@ public class JumpRanking : MonoBehaviour {
 	}
     public void SceneLoad()
     {
-        Application.LoadLevel("Ranking");
+        Application.LoadLevel("Title");
     }
 }
