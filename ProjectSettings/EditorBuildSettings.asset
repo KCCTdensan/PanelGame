@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scene/StageSelect.unity
     guid: 11625387ec3b3d145b19071e30773163
   - enabled: 1
-    path: Assets/Scene/Stage1.unity
+    path: Assets/Stage1.unity
     guid: 8b095ed7621dbc644a7f427387d55072
   - enabled: 1
     path: Assets/Scene/Stage2.unity
@@ -18,5 +18,17 @@ EditorBuildSettings:
     path: Assets/Scene/Stage3.unity
     guid: db8ca74774fb1664997cfb9416559615
   - enabled: 1
-    path: Assets/Scene/EndCredit.unity
-    guid: 6c1e82026b5e07a4aa8ac7971182741d
+    path: Assets/Scene/Credit.unity
+    guid: 6212702dedad45f4087286d10542b939
+  - enabled: 1
+    path: Assets/Scene/Title.unity
+    guid: 21a9c35370fe53a46b64e11371ae3364
+  - enabled: 1
+    path: Assets/Scene/Ranking.unity
+    guid: d68df0929b73fb643bf56d6f3f61cc31
+  - enabled: 1
+    path: Assets/Scene/Clear.unity
+    guid: ab88e63fe5e0d8d488113c493757179e
+  - enabled: 1
+    path: Assets/Scene/AllCrear.unity
+    guid: d27a573f1584e4a44a333f13c5eb6c21
