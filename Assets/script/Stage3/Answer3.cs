@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Answer : MonoBehaviour
+public class Answer3 : MonoBehaviour
 {
 	private bool[,] AnswerStates = new bool [3, 3];
 	private bool[,] CurrentStates = new bool [3, 3];
@@ -18,7 +18,7 @@ public class Answer : MonoBehaviour
 	void Start ()
 	{
 		TextAsset textasset = new TextAsset (); //テキストファイルのデータを取得するインスタンスを作成
-		textasset = Resources.Load ("test", typeof(TextAsset))as TextAsset; //Resourcesフォルダから対象テキストを取得
+		textasset = Resources.Load ("st1", typeof(TextAsset))as TextAsset; //Resourcesフォルダから対象テキストを取得
 		string TextLines = textasset.text; //テキスト全体をstring型で入れる変数を用意して入れる
 
 		//Splitで一行づつを代入した1次配列を作成

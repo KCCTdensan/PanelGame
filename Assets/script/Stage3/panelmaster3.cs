@@ -3,21 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class panelmaster : MonoBehaviour
+public class panelmaster3 : MonoBehaviour
 {
 		
 	public GameObject panel;
+  public GameObject timer;
+  public GameObject Cleartext;
+  private Timer time;
 	private bool nowturn;
 	private GameObject[,] panels = new GameObject[3, 3];
 	private bool[,] States = new bool[3, 3];
 	private panel_kaiten[,] pk = new panel_kaiten[3, 3];
-	Answer ans;
+	Answer3 ans;
+
 
 	int a, b;
 	// Use this for initialization
 	void Start ()
 	{
-		ans = gameObject.AddComponent<Answer>();
+		ans = gameObject.AddComponent<Answer3>();
+    time = timer.GetComponent<Timer>();
 		for (a = 0; a < 3; a++) {
 			for (b = 0; b < 3; b++) {
 				var aaa = Instantiate (panel);
@@ -60,9 +65,16 @@ public class panelmaster : MonoBehaviour
 			States [y, x - 1] = !States [y, x - 1];
 		Debug.Log (ans.check (States));
 		if (ans.check (States)) {
-			SceneManager.LoadScene ("StageSelect");
+      Cleartext.SetActive(true);
+      time.timestop = true;
+      Invoke("DelayMethod", 3.5f);
 		}
 	}
+
+  void DelayMethod()
+  {
+    SceneManager.LoadScene("StageSelect");
+  }
 
 	// Update is called once per frame
 	void Update ()

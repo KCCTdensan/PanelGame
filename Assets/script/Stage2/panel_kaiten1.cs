@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class panel_kaiten : MonoBehaviour {
+public class panel_kaiten1 : MonoBehaviour {
    
     [SerializeField]
 	public bool turning = false;
@@ -12,7 +12,7 @@ public class panel_kaiten : MonoBehaviour {
     private bool startmax = false;
     private float nowtime = 0;
 	public int x, y;
-	private panelmaster pm;
+	private panelmaster2 pm;
     public void turn()
     {
 		pm.turnpanels (y, x);
@@ -20,7 +20,7 @@ public class panel_kaiten : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         
-		pm = GameObject.FindGameObjectWithTag ("master").GetComponent<panelmaster> ();
+		pm = GameObject.FindGameObjectWithTag ("master").GetComponent<panelmaster2> ();
 
     }
 
