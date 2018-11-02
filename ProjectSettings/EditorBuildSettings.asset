@@ -26,9 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Ranking.unity
     guid: d68df0929b73fb643bf56d6f3f61cc31
-  - enabled: 1
-    path: Assets/Scene/Clear.unity
-    guid: ab88e63fe5e0d8d488113c493757179e
-  - enabled: 1
-    path: Assets/Scene/AllCrear.unity
-    guid: d27a573f1584e4a44a333f13c5eb6c21
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
